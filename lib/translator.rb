@@ -2,7 +2,7 @@ require 'yaml'
 
 def load_library(path)
   emoji_hash["get_meaning"] = {}
-  emoji_hash["get_emoticon"] = {}
+  emoji_hash[]"get_emoticon"] = {}
   YAML.load_file(path).each do |word, emojis|
     emoji_hash["get_meaning"][emojis[1]] = word
     emoji_hash["get_emoticon"][emojis[0]] = emojis[1]
