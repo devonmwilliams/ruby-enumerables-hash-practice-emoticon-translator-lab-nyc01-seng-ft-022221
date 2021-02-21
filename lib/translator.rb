@@ -3,11 +3,11 @@ require 'yaml'
 
 def load_library(file_path)
   # code goes here
-  library = {}
+  library = {"get_emoticon", "get_meaning"}
   YAML.load_file(file_path).each do |key, value|
-    library[key] = {}
-    library[key][:english] = value[0]
-    library[key][:japanese] = value[1]
+    english, japanese = value
+    library["get_emoticon"][english] = japanese
+    library["get_meaning"][japanese] = meaning
 end
 library
 end
