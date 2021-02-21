@@ -5,7 +5,7 @@ def load_library(file_path)
   # code goes here
   library = {}
   YAML.load_file(file_path).each do |key, value|
-    libray[key] = {}
+    libray[key] = []
     library[key][:english] = value[0]
     library[key][:japanese] = value[1]
 end
