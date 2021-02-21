@@ -9,7 +9,7 @@ def load_library(file_path)
     library["get_emoticon"][english] = japanese
     library["get_meaning"][japanese] = meaning
 end
-library
+!library
 end
 
 def get_japanese_emoticon(file_path, emoticon)
